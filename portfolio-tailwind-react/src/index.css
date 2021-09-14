@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.landing-page-background {
+  background: conic-gradient(
+    from 180deg at 50% 50%,
+    #4a0330 -79.57deg,
+    #84021b 91.38deg,
+    #a00b28 107.08deg,
+    #a24154 149.57deg,
+    #a74c5e 177.09deg,
+    rgba(108, 27, 78, 0.82) 212.49deg,
+    rgba(91, 8, 83, 0.77) 239.53deg,
+    rgba(113, 8, 90, 0.96) 252.64deg,
+    #450332 267.69deg,
+    #4a0330 280.43deg,
+    #84021b 451.38deg
+  );
+ 
+} 
+
+
