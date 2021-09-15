@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-.landing-page-background {
+.purple-div {
   background: conic-gradient(
     from 180deg at 50% 50%,
     #4a0330 -79.57deg,
