@@ -1,6 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+
+body {
+  font-family: "Quicksand", sans-serif;
+}
+
 
 .purple-div {
   background: conic-gradient(
@@ -17,17 +23,29 @@
     #4a0330 280.43deg,
     #84021b 451.38deg
   );
- 
-} 
-
-
-.white-div{
-  
 }
 
-.clear-div{
-
+.interests-banner {
+  background: linear-gradient(90.26deg, #a24a5f 17.46%, #7a3672 83.23%);
 }
-     
 
+.back-button {
+  width: 200px;
+  height: 70px;
+  background: #ffffff;
+  border: 1px solid #a74c5e;
+  box-sizing: border-box;
+  border-radius: 20px;
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  padding: 10px;
+  color: #a74c5e;
+}
 
+.back-button:hover {
+  background-color: #a74c5e;
+  color: white;
+}

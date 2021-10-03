@@ -1,6 +1,6 @@
 import Navbar from "./helpers/navbar";
 import { Timeline } from "react-twitter-widgets";
-import Button from "./helpers/button";
+import BigButton from "./helpers/button"
 
 function HomePage() {
   return (
@@ -12,8 +12,7 @@ function HomePage() {
           <Navbar />
 
           <div className="home-page-name-div text-white flex justify-start ml-10 items-center mb-20">
-            <h1 className="text-8xl "> Becki Floyd - </h1>
-            <h1 className="text-6xl ml-2 font-thin"> UX Developer </h1>
+            <h1 className="text-6xl mt-10 "> Becki Floyd -  UX Developer </h1>
           </div>
 
           <div>
@@ -46,9 +45,9 @@ function HomePage() {
               </div>
 
               <div className="home-page-buttons-div flex justify-around mt-10">
-                <Button text="About Me" />
-                <Button text="Employment" />
-                <Button text="Projects" />
+                <BigButton text="About Me" />
+                <BigButton text="Employment" />
+                <BigButton text="Projects" />
               </div>
             </div>
           
