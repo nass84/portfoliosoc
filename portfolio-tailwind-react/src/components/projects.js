@@ -125,7 +125,7 @@ function Projects() {
               <h2 className="project-title text-primary text-2xl text-left mb-5">
                 {project.title}
               </h2>
-              <img src={project.image}></img>
+              <img src={project.image} alt="project screenshot"></img>
             </div>
             <div className="example-text text-left mt-5 mb-10" key={project.id}>
               <li>{project.bullet1}</li>

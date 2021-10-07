@@ -2,7 +2,7 @@ import PinkNav from "./helpers/pinknav";
 
 function AboutPage() {
   return (
-    <div className="about-page-container mt-10 mb-10 flex flex-col md:text-2xl ml-10 mr-10 ">
+    <div className="about-page-container mt-10 mb-10 flex flex-col md:text-xl ml-10 mr-10 ">
       <div className="about-top-section flex justify-between pb-10">
         <h1 className="about-me flex flex-row text-primary text-6xl font-bold ml-10">
           About Me
@@ -107,7 +107,7 @@ function AboutPage() {
             Project Skills
           </h2>
 
-          <li>Project Management</li>
+          <li>PM</li>
           <li>User Research</li>
           <li>Personas</li>
           <li>Wireframing</li>

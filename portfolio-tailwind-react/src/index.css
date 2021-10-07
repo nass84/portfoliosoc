@@ -7,7 +7,6 @@ body {
   font-family: "Quicksand", sans-serif;
 }
 
-
 .purple-div {
   background: conic-gradient(
     from 180deg at 50% 50%,
@@ -46,6 +45,25 @@ body {
 }
 
 .back-button:hover {
+  background-color: #a74c5e;
+  color: white;
+}
+
+.reference-button {
+  width: 300px;
+  background: #ffffff;
+  border: 1px solid #a74c5e;
+  box-sizing: border-box;
+  border-radius: 20px;
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  color: #a74c5e;
+}
+
+.reference-button:hover {
   background-color: #a74c5e;
   color: white;
 }

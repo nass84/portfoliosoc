@@ -1,6 +1,7 @@
 import React from "react";
 import PinkNav from "./helpers/pinknav";
 import { useState } from "react";
+import  { Carousel } from "./helpers/slider"
 
 function Reference() {
   const [references, setReferences] = useState([
@@ -19,11 +20,16 @@ function Reference() {
       id: 2,
     },
     {
-      name: "Casey Griffiths",
-      reference:
-        "I've worked in IT delivery for 15 years and first met Becki through Central City Roller Derby where she was well known for her love of organising and finding tools to help the team function more efficiently. She is a proactive, empathetic person who genuinely cares about the people around her and what she can do to improve their experience of an event, a team or working on a project. We worked together on a number of initiatives for Central City where Becki was both a competent leader that could negotiate a sponsorship arrangement or fundraising activity but also project manage an event and ensure all needs were catered for whilst still delivering a fun, engaging occassion for all. I've watched her throw herself into learning and development activities not just with School of Code but also self driven study. She has progressed at a rapid pace and is committed to the continued development of her skills and has built a solid community of technical peers for support and sharing of ideas. Her motivation and enthusiasm is inspiring. I have no doubt that she would integrate excelently into a technical team in a range of roles as her skills and understanding far exceeds expectation. I have reviewed many of her projects and been impressed with the outcomes that are comparable to those delivered by seasoned developers and designers. Becki is an unforgettable person who leaves a long lasting positive impact on those that know her and in the legacy of all tasks she delivers.",
-      from: " Central City Roller Derby",
+      name: "See Next",
+      reference:  "I've worked in IT delivery for 15 years and first met Becki through Central City Roller Derby where she was well known for her love of organising and finding tools to help the team function more efficiently. She is a proactive, empathetic person who genuinely cares about the people around her and what she can do to improve their experience of an event, a team or working on a project. We worked together on a number of initiatives for Central City where Becki was both a competent leader that could negotiate a sponsorship arrangement or fundraising activity but also project manage an event and ensure all needs were catered for whilst still delivering a fun, engaging occassion for all.",
+      from: "",
       id: 3,
+    },
+    {
+      name: "Casey Griffiths",
+      reference:  "    I've watched her throw herself into learning and development activities not just with School of Code but also self driven study. She has progressed at a rapid pace and is committed to the continued development of her skills and has built a solid community of technical peers for support and sharing of ideas. Her motivation and enthusiasm is inspiring. I have no doubt that she would integrate excelently into a technical team in a range of roles as her skills and understanding far exceeds expectation. I have reviewed many of her projects and been impressed with the outcomes that are comparable to those delivered by seasoned developers and designers. Becki is an unforgettable person who leaves a long lasting positive impact on those that know her and in the legacy of all tasks she delivers.",
+      from: " Central City Roller Derby",
+      id: 3.1,
     },
     {
       name: "James Nunnerley",
@@ -165,8 +171,9 @@ function Reference() {
           Why should you hire Becki?
         </h2>
       </div>
+      <Carousel>
       {references.map((reference) => (
-        <div className="bg-primary m-10 p-5 text-white py-3 px-6 rounded-2xl text-lg ">
+        <div className="bg-primary m-5 p-5 text-white py-3 px-6 rounded-2xl text-lg container pt-10 ">
           <p>
             <p>{reference.reference}</p>
             
@@ -180,9 +187,12 @@ function Reference() {
           </p>
         </div>
       ))}
-      <button className="back-button mt-10 mb-10" type="button">
+      </Carousel>
+      <div className="flex justify-center">
+      <button className="back-button mt-5 mb-10" type="button">
         Back
       </button>
+      </div>
     </div>
   );
 }

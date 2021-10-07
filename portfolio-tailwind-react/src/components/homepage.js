@@ -19,6 +19,7 @@ function HomePage() {
             
               <div className="home-page-twitter-scratch-div flex justify-around ml-10 mr-10">
                 <div className="home-page-twitter">
+              
                   <Timeline
                     dataSource={{
                       sourceType: "profile",
@@ -39,6 +40,7 @@ function HomePage() {
                     height="402"
                     frameborder="0"
                     scrolling="no"
+                    title="School of Code Game"
                     allowfullscreen
                   ></iframe>
                 </div>
