@@ -1,7 +1,8 @@
 import React from "react";
 import PinkNav from "./helpers/pinknav";
 import { useState } from "react";
-import  { Carousel } from "./helpers/slider"
+import { Carousel } from "./helpers/slider";
+import { Link } from "react-router-dom";
 
 function Reference() {
   const [references, setReferences] = useState([
@@ -21,13 +22,15 @@ function Reference() {
     },
     {
       name: "See Next",
-      reference:  "I've worked in IT delivery for 15 years and first met Becki through Central City Roller Derby where she was well known for her love of organising and finding tools to help the team function more efficiently. She is a proactive, empathetic person who genuinely cares about the people around her and what she can do to improve their experience of an event, a team or working on a project. We worked together on a number of initiatives for Central City where Becki was both a competent leader that could negotiate a sponsorship arrangement or fundraising activity but also project manage an event and ensure all needs were catered for whilst still delivering a fun, engaging occassion for all.",
+      reference:
+        "I've worked in IT delivery for 15 years and first met Becki through Central City Roller Derby where she was well known for her love of organising and finding tools to help the team function more efficiently. She is a proactive, empathetic person who genuinely cares about the people around her and what she can do to improve their experience of an event, a team or working on a project. We worked together on a number of initiatives for Central City where Becki was both a competent leader that could negotiate a sponsorship arrangement or fundraising activity but also project manage an event and ensure all needs were catered for whilst still delivering a fun, engaging occassion for all.",
       from: "",
       id: 3,
     },
     {
       name: "Casey Griffiths",
-      reference:  "    I've watched her throw herself into learning and development activities not just with School of Code but also self driven study. She has progressed at a rapid pace and is committed to the continued development of her skills and has built a solid community of technical peers for support and sharing of ideas. Her motivation and enthusiasm is inspiring. I have no doubt that she would integrate excelently into a technical team in a range of roles as her skills and understanding far exceeds expectation. I have reviewed many of her projects and been impressed with the outcomes that are comparable to those delivered by seasoned developers and designers. Becki is an unforgettable person who leaves a long lasting positive impact on those that know her and in the legacy of all tasks she delivers.",
+      reference:
+        "    I've watched her throw herself into learning and development activities not just with School of Code but also self driven study. She has progressed at a rapid pace and is committed to the continued development of her skills and has built a solid community of technical peers for support and sharing of ideas. Her motivation and enthusiasm is inspiring. I have no doubt that she would integrate excelently into a technical team in a range of roles as her skills and understanding far exceeds expectation. I have reviewed many of her projects and been impressed with the outcomes that are comparable to those delivered by seasoned developers and designers. Becki is an unforgettable person who leaves a long lasting positive impact on those that know her and in the legacy of all tasks she delivers.",
       from: " Central City Roller Derby",
       id: 3.1,
     },
@@ -143,13 +146,6 @@ function Reference() {
       from: "Bootcamper - School of Code",
       id: 19,
     },
-    {
-      name: "Emilio Comiling",
-      reference:
-        "What I saw is that her enthusiasm and work rate throughout this bootcamp is on a different level. From all the repo's and now organizing our graduation party. Where do you get all that energy Becki?",
-      from: "Bootcamper - School of Code",
-      id: 20,
-    },
 
     {
       name: "Jamie Hannah",
@@ -164,34 +160,38 @@ function Reference() {
     <div className="reference-container ml-5 mr-5">
       <div className="reference-nav-div">
         <PinkNav />
-        <h1 className="reference-name text-primary text-4xl mt-10 mb-10 text-left font-bold">
+        <h1 className="reference-name text-primary text-4xl mb-2 text-left font-bold">
           References
         </h1>
-        <h2 className="reference-why text-primary text-2xl mt-10 mb-10  font-bold">
+        <h2 className="reference-why text-primary text-2xl  mb-2  font-bold ">
           Why should you hire Becki?
         </h2>
       </div>
-      <Carousel>
-      {references.map((reference) => (
-        <div className="bg-primary m-5 p-5 text-white py-3 px-6 rounded-2xl text-lg container pt-10 ">
-          <p>
-            <p>{reference.reference}</p>
-            
-            <br></br>
-            <p className="font-bold text-lg">
-              {reference.name}
-            </p>
-            <p>
-              {reference.from}
-            </p>
-          </p>
-        </div>
-      ))}
-      </Carousel>
       <div className="flex justify-center">
-      <button className="back-button mt-5 mb-10" type="button">
-        Back
-      </button>
+        <div className="reference-container ">
+          <Carousel className="container">
+          
+            {references.map((reference) => (
+              <div className="bg-primary m-5 p-5 text-white py-3 px-6 rounded-2xl text-lg pt-10">
+                <p>
+                  <p>{reference.reference}</p>
+
+                  <br></br>
+                  <p className="font-bold text-lg">{reference.name}</p>
+                  <p>{reference.from}</p>
+                </p>
+              </div>
+            ))}
+           
+          </Carousel>
+        </div>
+      </div>
+      <div className="flex justify-center">
+        <Link to="/employment">
+          <button className="back-button mt-2 mb-10" type="button">
+            Back
+          </button>
+        </Link>
       </div>
     </div>
   );

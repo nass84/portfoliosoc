@@ -1,6 +1,7 @@
 import Navbar from "./helpers/navbar";
 import { Timeline } from "react-twitter-widgets";
 import BigButton from "./helpers/button"
+import { Link} from "react-router-dom";
 
 function HomePage() {
   return (
@@ -11,14 +12,14 @@ function HomePage() {
         <div>
           <Navbar />
 
-          <div className="home-page-name-div text-white flex justify-start ml-10 items-center mb-20">
-            <h1 className="text-6xl mt-10 "> Becki Floyd -  UX Developer </h1>
+          <div className="home-page-name-div text-white flex justify-start ml-10 items-center mb-10">
+            <h1 className="text-6xl mt-1 "> Becki Floyd -  UX Developer </h1>
           </div>
 
           <div>
             
               <div className="home-page-twitter-scratch-div flex justify-around ml-10 mr-10">
-                <div className="home-page-twitter">
+                <div className="home-page-twitter transform">
               
                   <Timeline
                     dataSource={{
@@ -47,9 +48,15 @@ function HomePage() {
               </div>
 
               <div className="home-page-buttons-div flex justify-around mt-10">
+              <Link to="/about">
                 <BigButton text="About Me" />
+                </Link>
+                <Link to="/employment">
                 <BigButton text="Employment" />
+                </Link>
+                <Link to="/projects">
                 <BigButton text="Projects" />
+                </Link>
               </div>
             </div>
           

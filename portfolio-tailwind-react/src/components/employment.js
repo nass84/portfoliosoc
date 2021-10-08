@@ -1,8 +1,9 @@
 import PinkNav from "./helpers/pinknav";
+import { Link} from "react-router-dom";
 
 const Employment = () => {
   return (
-    <div className="employment-page-container mt-10 mb-10 flex flex-col md:text-xl ml-10 mr-10 ">
+    <div className="employment-page-container mt-10 flex flex-col md:text-xl ml-10 mr-10 ">
       <PinkNav />
       <div className="employment-top-section flex justify-between pb-10">
         <h1 className="employment flex flex-row mt-10 text-primary text-4xl md:text-6xl font-bold md:ml-10">
@@ -10,12 +11,14 @@ const Employment = () => {
         </h1>
       </div>
       <div className="flex justify-center">
-        <button className="back-button mt-1 mb-10 " type="button">
+      <Link to="/references">
+        <button className="back-button mt-5 mb-20 " type="button">
           Click here for References
         </button>
+        </Link>
       </div>
-      <div className="employment-2-columns  text-left p-2 bg-gray-100 lg:flex">
-        <div className="employment-top-left-col flex-col md:p-5 lg:p-10 lg:flex-col lg:w-2/4">
+      <div className="employment-2-columns text-left p-2  bg-pink-50 lg:flex">
+        <div className="employment-top-left-col  flex-col md:p-5 lg:p-10 lg:flex-col lg:w-2/4">
           <h2 className="text-primary font-extrabold  text-3xl pb-10 underline ">
             Citizens Advice
           </h2>
@@ -44,18 +47,16 @@ const Employment = () => {
             New Deal for Advice - Project Coordinator - 2006
           </h3>
           <p>
-            Responsible for recruitment, training and supervision of volunteers
-            for the Walsall locality{" "}
+            Responsible for recruitment, training and supervision of volunteers for the Walsall locality
           </p>
           <h3 className="text-primary font-bold mt-5 text-xl pb-10 ">
             Generalist Advisor- 2002
           </h3>
           <p>
-            Developed subject-based knowledge on all advice areas to give
-            holistic advice to clients
+            Developed subject-based knowledge on all advice areas to give holistic advice to clients
           </p>
         </div>
-        <div className="employment-top-right-col flex-col mt-10 md:mt-0 md:p-5 lg:p-10 lg:flex lg:w-2/4">
+        <div className="employment-top-right-col flex-col mt-10 md:mt-0 md:p-5 lg:p-10 lg:flex lg:w-2/4 ">
           <h2 className="text-primary font-bold  text-3xl pb-10 underline">
             Other
           </h2>
@@ -86,7 +87,6 @@ const Employment = () => {
             Head of minimum skills coaching, sponsorship and events team and A
             team skater. Awarded contributor of the year in 2013
           </p>
-
           <h3 className="text-primary font-bold mt-5 text-xl pb-10 ">
             Mad Hatters - 1999
           </h3>
@@ -96,10 +96,13 @@ const Employment = () => {
           </p>
         </div>
       </div>
+      
       <div className="flex justify-center">
+      <Link to="/">
         <button className="back-button mt-10 mb-10" type="button">
           Back
         </button>
+        </Link>
       </div>
     </div>
   );

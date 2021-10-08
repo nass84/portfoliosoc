@@ -1,5 +1,5 @@
 import "./App.css";
-
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import HomePage from "./components/homepage";
 import AboutPage from "./components/about";
 import Projects from "./components/projects";
@@ -9,7 +9,27 @@ import Employment from "./components/employment";
 function App() {
   return (
     <div className="App">
-      <Employment />
+      <main>
+        <Router>
+          <Route path="/" exact>
+            <HomePage />
+          </Route>
+          <Switch>
+            <Route path="/about">
+              <AboutPage />
+            </Route>
+            <Route path="/projects">
+              <Projects />
+            </Route>
+            <Route path="/references">
+              <Reference />
+            </Route>
+            <Route path="/employment">
+              <Employment />
+            </Route>
+          </Switch>
+        </Router>
+      </main>
     </div>
   );
 }

@@ -8,6 +8,7 @@ import flex from "../images/flexercise.png";
 import mystery from "../images/mystery.png";
 import wonder from "../images/wonder.png";
 import portfolio from "../images/portfolio.png";
+import { Link} from "react-router-dom";
 
 function Projects() {
   const project = [
@@ -138,7 +139,9 @@ function Projects() {
           </div>
         ))}
       </div>
+      <Link to="/">
       <button className="back-button mt-5 mb-20">Back</button>
+      </Link>
     </div>
   );
 }
