@@ -8,7 +8,7 @@ import flex from "../images/flexercise.png";
 import mystery from "../images/mystery.png";
 import wonder from "../images/wonder.png";
 import portfolio from "../images/portfolio.png";
-import { Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Projects() {
   const project = [
@@ -17,7 +17,8 @@ function Projects() {
       title: "Interview Process",
       bullet1:
         "Part of the School of Code, interview process was to learn how to use Scrach and make a game",
-      bullet2: "I made the School of Code interview process into a Scratch adventure, with a quiz, drawing app and game",
+      bullet2:
+        "I made the School of Code interview process into a Scratch adventure, with a quiz, drawing app and game",
       additional: "",
       id: 1,
     },
@@ -100,7 +101,7 @@ function Projects() {
   ];
 
   return (
-    <div className="project-container ml-5 mr-5">
+    <div className="project-container mt-10 ml-5 mr-5">
       <div className="project-nav-div">
         <PinkNav />
         <h1 className="project-name text-primary text-4xl mt-10 mb-10 text-left font-bold">
@@ -110,10 +111,9 @@ function Projects() {
       <div className="project-text text-left">
         <p>
           In March 2021, I was chosen from over 500 people to take part in the
-          first part-time bootcamp with School of Code. 
-          <br></br>
-          <br></br>
-          I spent a minimum of 24 hours a week over the 6 month course learning technical skills by making projects aswell as working full time.
+          first part-time bootcamp with School of Code. I spent a minimum of 24
+          hours a week over the 6 month course learning technical skills by
+          making projects aswell as working full time for Citizens Advice.
           <br></br>
           <br></br>
           These are the projects I made during my time with School of Code.
@@ -121,14 +121,21 @@ function Projects() {
       </div>
       <div className="projects-examples mt-10">
         {project.map((project) => (
-          <div className="example-div">
-            <div className="example-image">
-              <h2 className="project-title text-primary text-2xl text-left mb-5">
+          <div className="example-div  p-10 xl:pl-20 xl:pr:20 ml:10 mr:10 lg:flex">
+            <div className="example-image justify-center  lg:w-6/12">
+              <h2 className="project-title font-extrabold text-primary text-2xl text-left mb-5">
                 {project.title}
               </h2>
-              <img src={project.image} alt="project screenshot"></img>
+              <img
+                className="project-example w-300"
+                src={project.image}
+                alt="project screenshot"
+              ></img>
             </div>
-            <div className="example-text text-left mt-5 mb-10" key={project.id}>
+            <div
+              className="example-text text-left w-300 lg:w-6/12 p-10 lg:pt-20 mb-10 lg:justify-center lg:items-center lg:ml-10"
+              key={project.id}
+            >
               <li>{project.bullet1}</li>
               <li>{project.bullet2}</li>
               <p className="coded text-primary font-bold mt-5 ">
@@ -140,7 +147,7 @@ function Projects() {
         ))}
       </div>
       <Link to="/">
-      <button className="back-button mt-5 mb-20">Back</button>
+        <button className="back-button mb-5">Back</button>
       </Link>
     </div>
   );

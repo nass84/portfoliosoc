@@ -157,13 +157,13 @@ function Reference() {
   ]);
 
   return (
-    <div className="reference-container ml-5 mr-5">
+    <div className="reference-container mt-10 ml-5 mr-5">
       <div className="reference-nav-div">
         <PinkNav />
         <h1 className="reference-name text-primary text-4xl mb-2 text-left font-bold">
           References
         </h1>
-        <h2 className="reference-why text-primary text-2xl  mb-2  font-bold ">
+        <h2 className="reference-why text-primary text-2xl  mb-2  font-bold mt-10 xl:mt-0">
           Why should you hire Becki?
         </h2>
       </div>
