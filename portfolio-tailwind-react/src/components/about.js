@@ -1,37 +1,37 @@
 import PinkNav from "./helpers/pinknav";
-import { Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function AboutPage() {
   return (
-    <div className="about-page-container mt-10 mb-10 flex flex-col md:text-xl ml-10 mr-10 ">
+    <div className="about-page-container mt-1 mb-1 flex flex-col sm:text-lg ml-10 mr-10 ">
       <PinkNav />
       <div className="about-top-section flex justify-between pb-10">
         <h1 className="about-me flex flex-row text-primary text-6xl font-bold ml-10">
           About Me
         </h1>
       </div>
-      <div className="bg-pink-50 p-10">
-        <div className="about-top-text flex flex-col md:flex-row ">
-          <div className="about-top-2-columns w-5/6 flex-row mr-10">
-            <div className="about-top-left-column flex-row  w">
-              <div className="about-top-left-top flex-col p-10 text-justify pb-0">
+      <div className="bg-pink-50 p-1 xl:p-10">
+        <div className="about-top-text flex flex-col lg:flex-row ">
+          <div className="about-top-2-columns w-5/6 flex-row lg:mr-5 xl:mr-10">
+            <div className="about-top-left-column flex-row">
+              <div className="about-top-left-top flex-col p-2 xl:p-10 text-justify pb-0 ml-10 md:ml-20 lg:ml-0">
                 <p>
-                  After working for Citizens Advice for 18 years, I am currently
-                  looking for a career change into the world of Tech. I was
-                  selected from over 500 people to take part in the first School
-                  of Code part-time Bootcamp to learn how to become a Front End
-                  Developer. During this time, I discovered a love for the UX
-                  design process and coding products that users have a genuine
-                  need for. I am currently completing my Google UX Design
-                  Certificate aswell as taking part in the #100daysofcode
+                  After working for Citizens Advice for many years, I am
+                  currently looking for a career change into the world of Tech.
+                  I was selected from over 500 people to take part in the first
+                  School of Code part-time Bootcamp to learn how to become a
+                  Front End Developer. During this time, I discovered a love for
+                  the UX design process and coding products that users have a
+                  genuine need for. I am currently completing my Google UX
+                  Design Certificate aswell as taking part in the #100daysofcode
                   challenge on Twitter.
                 </p>
               </div>
-              <div className="about-top-left-bottom ">
-                <div className="about-user-persona p-10 ">
+              <div className="about-top-left-bottom "> 
+                <div className="about-user-persona p-10 hidden lg:block">
                   <div className="about-top-user-persona flex text-left  ">
                     <div className="about-goals text-left p-4  w-1/2">
-                      <h2 className="text-primary font-bold  text-xl pb-10 ">
+                      <h2 className="text-primary font-bold  text-xl pb-1 ">
                         Goals
                       </h2>
 
@@ -46,7 +46,7 @@ function AboutPage() {
                       </li>
                     </div>
                     <div className="about-frustrations   w-1/2  p-4">
-                      <h2 className="text-primary font-bold  pb-10 text-xl">
+                      <h2 className="text-primary font-bold  pb-1 text-xl">
                         Frustrations
                       </h2>
 
@@ -61,7 +61,7 @@ function AboutPage() {
                   </div>
                   <div className="about-bottom-user-persona flex">
                     <div className="about-motivations mt-7 w-1/2 text-left p-4">
-                      <h2 className="text-primary font-bold text-left pb-10 text-xl">
+                      <h2 className="text-primary font-bold text-left pb-1 text-xl">
                         Motivations
                       </h2>
 
@@ -72,11 +72,11 @@ function AboutPage() {
                       <li>Having a positive impact</li>
                     </div>
                     <div className="about-needs mt-10 w-1/2">
-                      <h2 className="text-primary font-bold text-left pb-10 text-xl ">
+                      <h2 className="text-primary font-bold text-left pb-1 text-xl ">
                         Needs
                       </h2>
 
-                      <p className="text-primary text-xl mt-0 italic">
+                      <p className="text-primary text-xl mt-5 italic">
                         “As someone who thrives on problem solving, I need a
                         career that allows me to bring something unique to the
                         table, whilst providing opportunities to grow and
@@ -88,9 +88,8 @@ function AboutPage() {
               </div>
             </div>
           </div>
-          <div className="about-top-right-column text-left flex-row md: flex-col">
-            <h2 className="text-primary font-bold pb-10 text-3xl">
-              {" "}
+          <div className="about-top-right-column text-left flex-row md: flex-col hidden lg:block">
+            <h2 className="text-primary font-bold xl:pb-10 text-3xl">
               Tech Skills
             </h2>
 
@@ -105,8 +104,7 @@ function AboutPage() {
             <li>React</li>
             <li>Testing</li>
 
-            <h2 className="text-primary font-bold pt-10 pb-10 mb-20 text-3xl align-center w-full ">
-              {" "}
+            <h2 className="text-primary font-bold pt-10 pb-10 text-3xl align-center w-full ">
               Project Skills
             </h2>
 
@@ -123,11 +121,11 @@ function AboutPage() {
             <li>Trello</li>
           </div>
         </div>
-        <div className="interests-banner text-white pl-20 font-bold h-20 text-left text-6xl mt-20">
+        <div className="interests-banner z-10 text-white pl-20 font-bold h-20 text-left text-6xl mt-5">
           Interests
         </div>
 
-        <div className="about-interest-text text-justify pt-10 ml-20 mr-20">
+        <div className="about-interest-text text-justify pt-10 ml-20 mr-20 ">
           I am the “entertainment director” for my group of friends, I love
           meeting new people and adding them to our Super Adventure Club group.
           This role was especially important during lockdown with so many people
@@ -158,7 +156,7 @@ function AboutPage() {
           <br></br>
         </div>
         <Link to="/">
-          <button className="back-button mt-5 mb-20">Back</button>
+          <button className="back-button mt-10 mb-10">Back</button>
         </Link>
       </div>
     </div>
