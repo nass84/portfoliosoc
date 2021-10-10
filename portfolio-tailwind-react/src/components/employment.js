@@ -85,7 +85,7 @@ const Employment = () => {
           </h3>
           <p>
             Head of minimum skills coaching, sponsorship and events team and A
-            team skater. Awarded contributor of the year in 2013
+            team skater. Awarded contributor of the year.
           </p>
           <h3 className="text-primary font-bold mt-5 text-xl pb-10 ">
             Mad Hatters - 1999

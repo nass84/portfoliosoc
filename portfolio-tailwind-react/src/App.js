@@ -5,14 +5,16 @@ import AboutPage from "./components/about";
 import Projects from "./components/projects";
 import Reference from "./components/reference";
 import Employment from "./components/employment";
+import Landing from "./components/index"
 
 function App() {
   return (
     <div className="App">
       <main>
-        <Router>
+      
+       <Router>
           <Route path="/" exact>
-            <HomePage />
+            <Landing />
           </Route>
           <Switch>
             <Route path="/about">
