@@ -56,8 +56,7 @@ export function Carousel({
       <button
         onClick={() => updateIndex(currentIndex - 1)}
         style={{ zIndex: "9999" }}
-        className={`${buttonClassName} left`}
-        className="text-2xl md:text-6xl text-primary"
+        className={`${buttonClassName} left text-2xl md:text-6xl text-primary`}
       >◀</button>
 
       <div
@@ -89,8 +88,7 @@ export function Carousel({
       <button
         onClick={() => updateIndex(currentIndex + 1)}
         style={{ zIndex: "9999" }}
-        className={`${buttonClassName} right`}
-        className="text-2xl md:text-6xl text-primary"
+        className={`${buttonClassName} right text-2xl md:text-6xl text-primary`}
       >▶</button>
     </div>
   );

@@ -88,7 +88,7 @@ function AboutPage() {
               </div>
             </div>
           </div>
-          <div className="about-top-right-column text-left flex-row md: flex-col hidden lg:block">
+          <div className="about-top-right-column text-left flex-row md:flex-col hidden lg:block">
             <h2 className="text-primary font-bold xl:pb-10 text-3xl">
               Tech Skills
             </h2>

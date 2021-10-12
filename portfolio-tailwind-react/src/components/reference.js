@@ -1,11 +1,11 @@
 import React from "react";
 import PinkNav from "./helpers/pinknav";
-import { useState } from "react";
+// import { useState } from "react";
 import { Carousel } from "./helpers/slider";
 import { Link } from "react-router-dom";
 
 function Reference() {
-  const [references, setReferences] = useState([
+  const references = ([
     {
       name: "Arminder Mann",
       reference:
