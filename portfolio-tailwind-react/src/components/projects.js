@@ -16,10 +16,10 @@ function Projects() {
       image: scratch,
       title: "SOC Interview Process",
       bullet1:
-        "Part of the School of Code, interview process was to learn how to use Scrach and make a game",
+        "Part of the School of Code interview process was to learn how to use Scratch and make a game",
       bullet2:
         "I made the School of Code interview process into a Scratch adventure, with a quiz, drawing app and game",
-      additional: "Coded with Scratch",
+      additional: "Made with Scratch",
       website: "https://scratch.mit.edu/projects/498739371/",
       id: 1,
     },
