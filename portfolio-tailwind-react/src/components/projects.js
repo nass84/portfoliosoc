@@ -14,12 +14,13 @@ function Projects() {
   const project = [
     {
       image: scratch,
-      title: "Interview Process",
+      title: "SOC Interview Process",
       bullet1:
         "Part of the School of Code, interview process was to learn how to use Scrach and make a game",
       bullet2:
         "I made the School of Code interview process into a Scratch adventure, with a quiz, drawing app and game",
-      additional: "",
+      additional: "Coded with Scratch",
+      website: "https://scratch.mit.edu/projects/498739371/",
       id: 1,
     },
     {
@@ -28,7 +29,8 @@ function Projects() {
       bullet1:
         "Interviewed a fellow boot camper to gather relevant information to create a portfolio website for them",
       bullet2: "Learnt HTML, CSS and basic user research techniques",
-      additional: "",
+      additional: "Coded with HTML and CSS",
+      website: "https://schoolofcode.github.io/w1_website-challenge-nass84/",
       id: 2,
     },
     {
@@ -37,7 +39,8 @@ function Projects() {
       bullet1:
         "Challenged to make a  simultaneous, zero-sum game: Rock, Paper, Scissors game",
       bullet2: "Learnt JavaScript and CSS Flexbox",
-      additional: "",
+      additional: "Coded in Vanilla JavaScript",
+      website: "https://schoolofcode.github.io/w3_rock-paper-scissors-nass84/",
       id: 3,
     },
     {
@@ -46,7 +49,9 @@ function Projects() {
       bullet1: "Used 3 APIS to generate the information for the website",
       bullet2:
         "Worked with a senior developer to code a Spotify player that plays songs related to the ingredient searched for",
-      additional: "",
+      additional: "Coded in Vanilla JavaScript",
+      website:
+        "https://schoolofcode.github.io/w6_checkpoint-challenge-recipe-nass84/",
       id: 4,
     },
     {
@@ -56,7 +61,8 @@ function Projects() {
         "Managed a team of 3 to create a Quiz Hosting website for Quiz Hosts",
       bullet2:
         "Used Agile project management techniques, GitHub projects, User research, APIs, Responsive design",
-      additional: "",
+      additional: "Coded in Vanilla JavaScript",
+      website: "https://schoolofcode.github.io/w8_team-project-quizleap/",
       id: 5,
     },
     {
@@ -67,6 +73,8 @@ function Projects() {
       bullet2:
         "Used Figma for wireframing and prototypes, Figjam for the design process and Jira for project management. This was the first project where I worked with React",
       additional: "Coded in React",
+      website:
+        "https://schoolofcode.github.io/w15_collaborative-react-project-fitness-app/",
       id: 6,
     },
     {
@@ -75,7 +83,8 @@ function Projects() {
       bullet1:
         "Challenged to learn a new subject by ourselves and create a project. I built a website for my mystery club group to record our mystery memories",
       bullet2: "Learnt SASS",
-      additional: "Coded in React",
+      additional: "Coded in React using SASS",
+      website: "https://github.com/nass84/mystery-club",
       id: 7,
     },
     {
@@ -86,6 +95,7 @@ function Projects() {
       bullet2:
         "Used Miro for the design process, Completed User Research, Figma for wireframing and prototypes. I worked on how the different components would link together, uploading photos and getting them to display on different pages",
       additional: "Coded in React with Firebase",
+      website: "shorturl.at/lGIX4",
       id: 8,
     },
     {
@@ -96,6 +106,7 @@ function Projects() {
       bullet2:
         "Used Figma for the design process, Used UX groups for feedback, Figma for wireframing and prototype. I used Tailwind for styling",
       additional: "Coded in React and Tailwind",
+      website: "https://boredinbrum.uk/",
       id: 9,
     },
   ];
@@ -123,7 +134,7 @@ function Projects() {
         {project.map((project) => (
           <div className="example-div  p-10 xl:pl-20 xl:pr:20 ml:10 mr:10 lg:flex lg:text-xl">
             <div className="example-image justify-center  lg:w-6/12">
-              <h2 className="project-title font-extrabold text-primary text-2xl text-left mb-5">
+              <h2 className="project-title font-extrabold text-primary text-2xl xl:text-3xl text-left mb-5">
                 {project.title}
               </h2>
               <img
@@ -138,10 +149,21 @@ function Projects() {
             >
               <li>{project.bullet1}</li>
               <li>{project.bullet2}</li>
+              <br></br>
+              <div className="flex justify-center">
+                <a
+                  className="bg-primary p-3 text-white rounded-lg hover:bg-white hover:text-primary border-solid border-2 border-primary"
+                  target="_blank"
+                  rel="noreferrer"
+                  href={project.website}
+                >
+                  Click Here To See It
+                </a>
+              </div>
               <p className="coded text-primary font-bold mt-5 ">
                 {project.additional}
               </p>
-              <div className="line h-1 bg-primary mt-5"></div>
+              <div className="line h-1 bg-primary mt-5 "></div>
             </div>
           </div>
         ))}
