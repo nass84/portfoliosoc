@@ -163,7 +163,7 @@ function Reference() {
         <h1 className="reference-name text-primary text-4xl md:text-6xl mb-2 text-left font-bold">
           References
         </h1>
-        <h2 className="reference-why text-primary text-2xl  mb-2  font-bold mt-10 xl:mt-0">
+        <h2 className="reference-why text-primary text-2xl lg:text-3xl mb-2  font-bold mt-10 xl:mt-0">
           Why should you hire Becki?
         </h2>
       </div>
@@ -172,12 +172,12 @@ function Reference() {
           <Carousel className="container">
           
             {references.map((reference) => (
-              <div className="bg-primary m-5 p-5 text-white py-3 px-6 rounded-2xl text-lg pt-10">
+              <div className="bg-primary m-5 p-5 text-white py-3 px-6 rounded-2xl text-lg lg:text-xl xl:text-2xl pt-10">
                 <p>
                   <p>{reference.reference}</p>
 
                   <br></br>
-                  <p className="font-bold text-lg">{reference.name}</p>
+                  <p className="font-bold">{reference.name}</p>
                   <p>{reference.from}</p>
                 </p>
               </div>
