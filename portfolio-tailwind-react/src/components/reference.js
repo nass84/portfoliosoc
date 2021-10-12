@@ -157,10 +157,10 @@ function Reference() {
   ]);
 
   return (
-    <div className="reference-container mt-10 ml-5 mr-5">
+    <div className="reference-container ml-5 mr-5">
       <div className="reference-nav-div">
         <PinkNav />
-        <h1 className="reference-name text-primary text-4xl md:text-6xl mb-2 text-left font-bold">
+        <h1 className="reference-name text-primary text-4xl md:text-6xl text-left font-bold">
           References
         </h1>
         <h2 className="reference-why text-primary text-2xl lg:text-3xl mb-2  font-bold mt-10 xl:mt-0">
@@ -172,7 +172,7 @@ function Reference() {
           <Carousel className="container">
           
             {references.map((reference) => (
-              <div className="bg-primary m-5 p-5 text-white py-3 px-6 rounded-2xl text-lg lg:text-xl xl:text-2xl pt-10">
+              <div className="bg-primary m-5 p-5 text-white py-3 px-6 rounded-2xl text-lg lg:text-xl pt-10">
                 <p>
                   <p>{reference.reference}</p>
 

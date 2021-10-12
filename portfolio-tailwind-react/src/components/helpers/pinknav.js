@@ -1,7 +1,7 @@
 function PinkNav() {
   return (
     <div>
-    <div className="text-primary text-xl lg:text-2xl xl:text-3xl flex justify-end items-center text-m w-auto ml-5 mr-6 font-bold ">
+    <div className="text-primary text-xl lg:text-2xl flex justify-end items-center text-m w-auto ml-5 mr-6 font-bold ">
     
       <a className="ml-5 mr-5 hover:text-secondary hover:font-bold" href="www.github.com/nass84/" target="_blank">GitHub</a>
       <a className="mr-5 hover:text-secondary hover:font-bold" href="beckifloyd@gmail.com/" target="_blank">Email</a>

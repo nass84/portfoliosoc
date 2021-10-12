@@ -14,8 +14,8 @@ function HomePage() {
             <Navbar />
           </div>
           <div className="home-page-name-div text-white flex-col justify-start md:ml-10 items-center mb-5">
-            <h1 className="text-5xl md:text-5xl lg:text-7xl xl:text-8xl mt-5"> Becki Floyd  </h1>
-            <h2 className="text-2xl lg:text-3xl xl:text-6xl lg:mb-10 xl:mb-20">UX Developer</h2>
+            <h1 className="text-5xl md:text-5xl lg:text-7xl mt-5"> Becki Floyd  </h1>
+            <h2 className="text-2xl lg:text-3xl lg:mb-10">UX Developer</h2>
           </div>
 
           <div className="">
@@ -47,7 +47,7 @@ function HomePage() {
               </div>
             </div>
             <div class="flex justify-center">
-            <div className="home-page-buttons-div flex justify-center mt-5 flex-col lg-justify-around lg:flex-row lg:mt-10 xl:mt-20">
+            <div className="home-page-buttons-div flex justify-center mt-5 flex-col lg-justify-around lg:flex-row lg:mt-10 ">
               <Link to="/about">
                 <BigButton text="About Me" />
               </Link>

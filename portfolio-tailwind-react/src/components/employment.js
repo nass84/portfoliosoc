@@ -12,7 +12,7 @@ const Employment = () => {
       </div>
       <div className="flex justify-center">
       <Link to="/references">
-        <button className="reference-button mt-5 mb-10 lg-mt-2 lg:mb-2 p-5" type="button">
+        <button className="reference-button hidden lg:block mt-5 mb-10 lg-mt-2 lg:mb-2 p-5" type="button">
           Click here for References
         </button>
         </Link>
