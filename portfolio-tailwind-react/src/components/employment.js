@@ -5,19 +5,19 @@ const Employment = () => {
   return (
     <div className="employment-page-container mt-10 flex flex-col md:text-xl ml-10 mr-10 ">
       <PinkNav />
-      <div className="employment-top-section flex justify-between pb-10">
-        <h1 className="employment flex flex-row mt-10 text-primary text-4xl md:text-6xl font-bold md:ml-10">
+      <div className="employment-top-section flex justify-between pb-10 xl:pb-0">
+        <h1 className="employment flex flex-row mt-5 text-primary text-4xl md:text-6xl font-bold md:ml-10">
           Employment
         </h1>
       </div>
       <div className="flex justify-center">
       <Link to="/references">
-        <button className="reference-button mt-5 mb-10 lg:mb-5 p-5" type="button">
+        <button className="reference-button mt-5 mb-10 lg-mt-2 lg:mb-2 p-5" type="button">
           Click here for References
         </button>
         </Link>
       </div>
-      <div className="employment-2-columns text-left p-2  bg-pink-50 lg:flex">
+      <div className="employment-2-columns text-left p-2  lg:flex">
         <div className="employment-top-left-col  flex-col md:p-5 lg:p-10 lg:flex-col lg:w-2/4">
           <h2 className="text-primary font-extrabold  text-3xl pb-10 underline ">
             Citizens Advice
@@ -64,14 +64,13 @@ const Employment = () => {
             Mystery Club - 2019
           </h3>
           <p>
-            Organising mystery events around the West Midlands area for people
-            to attend
+            Organising mystery events around the West Midlands area for people to attend on a Sunday
           </p>
           <h3 className="text-primary font-bold mt-5 text-xl pb-10 ">
             Green Fingers Garden Services - 2016
           </h3>
           <p>
-            Management of the business side of my partner’s landscaping business
+            Management of the business side of my partner’s landscaping business, including Social Media, Accounting and Networking
           </p>
           <h3 className="text-primary font-bold mt-5 text-xl pb-10 ">
             Team Party Unicorn - 2013
@@ -99,7 +98,7 @@ const Employment = () => {
       
       <div className="flex justify-center">
       <Link to="/">
-        <button className="back-button mt-10 mb-10" type="button">
+        <button className="back-button mt-10 mb-10 lg:mt-2 lg:mb-2" type="button">
           Back
         </button>
         </Link>
