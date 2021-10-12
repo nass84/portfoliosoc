@@ -5,16 +5,16 @@ function AboutPage() {
   return (
     <div className="about-page-container mt-10 mb-1 flex flex-col sm:text-lg ml-10 mr-10 xl:ml-20 xl:mr-20 ">
       <PinkNav />
-      <div className="about-top-section flex justify-between pb-10 lg:pb-0">
+      <div className="about-top-section flex justify-between">
         <h1 className="about-me flex flex-row text-primary text-4xl md:text-6xl font-bold ml-10">
           About Me
         </h1>
       </div>
       <div className=" p-1 xl:p-10">
-        <div className="about-top-text lg:text-xl xl:text-2xl flex flex-col lg:flex-row ">
+        <div className="about-top-text lg:text-lg flex flex-col lg:flex-row ">
           <div className="about-top-2-columns w-5/6 flex-row lg:mr-5 xl:mr-10">
             <div className="about-top-left-column flex-row">
-              <div className="about-top-left-top flex-col p-2 xl:p-10 text-left pb-0 ml-10 md:ml-20 lg:ml-0">
+              <div className="about-top-left-top flex-col p-2 text-left pb-0 ml-10 md:ml-20 lg:ml-0">
                 <p>
                   After working for Citizens Advice for many years, I am
                   currently looking for a career change into the world of Tech.
@@ -76,7 +76,7 @@ function AboutPage() {
                         Needs
                       </h2>
 
-                      <p className="text-primary text-xl lg:text-2xl xl:text-3xl mt-5 italic">
+                      <p className="text-primary text-xl lg:text-2xl mt-5 italic">
                         “As someone who thrives on problem solving, I need a
                         career that allows me to bring something unique to the
                         table, whilst providing opportunities to grow and
@@ -125,7 +125,7 @@ function AboutPage() {
           Interests
         </div>
 
-        <div className="about-interest-text text-left pt-10 ml-20 mr-20 lg:text-xl xl:text-2xl ">
+        <div className="about-interest-text text-left pt-10 ml-20 mr-20 lg:text-lg ">
           I am the “entertainment director” for my group of friends, I love
           meeting new people and adding them to our Super Adventure Club group.
           This role was especially important during lockdown with so many people

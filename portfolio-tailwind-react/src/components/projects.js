@@ -108,7 +108,7 @@ function Projects() {
           Projects
         </h1>
       </div>
-      <div className="project-text text-left lg:text-xl xl:text-2xl">
+      <div className="project-text text-left lg:text-xl">
         <p>
           In March 2021, I was chosen from over 500 people to take part in the
           first part-time bootcamp with School of Code. I spent a minimum of 24
@@ -121,7 +121,7 @@ function Projects() {
       </div>
       <div className="projects-examples mt-10">
         {project.map((project) => (
-          <div className="example-div  p-10 xl:pl-20 xl:pr:20 ml:10 mr:10 lg:flex lg:text-xl xl:text-2xl">
+          <div className="example-div  p-10 xl:pl-20 xl:pr:20 ml:10 mr:10 lg:flex lg:text-xl">
             <div className="example-image justify-center  lg:w-6/12">
               <h2 className="project-title font-extrabold text-primary text-2xl text-left mb-5">
                 {project.title}
