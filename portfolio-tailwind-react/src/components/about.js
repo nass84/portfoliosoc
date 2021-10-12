@@ -6,7 +6,7 @@ function AboutPage() {
     <div className="about-page-container mt-10 mb-1 flex flex-col sm:text-lg ml-10 mr-10 ">
       <PinkNav />
       <div className="about-top-section flex justify-between pb-10">
-        <h1 className="about-me flex flex-row text-primary text-6xl font-bold ml-10">
+        <h1 className="about-me flex flex-row text-primary text-4xl md:text-6xl font-bold ml-10">
           About Me
         </h1>
       </div>
@@ -121,7 +121,7 @@ function AboutPage() {
             <li>Trello</li>
           </div>
         </div>
-        <div className="interests-banner z-10 text-white pl-20 font-bold h-20 text-left text-6xl mt-5">
+        <div className="interests-banner z-10 text-white lg:pl-20 font-bold h-20 text-left text-6xl mt-5">
           Interests
         </div>
 

@@ -20,7 +20,7 @@ function HomePage() {
 
           <div>
             <div className="home-page-twitter-scratch-div flex flex-row justify-around ml-10 mr-10">
-              <div className="home-page-twitter transform mr-10">
+              <div className="home-page-twitter transform lg:mr-10">
                 <Timeline
                   dataSource={{
                     sourceType: "profile",

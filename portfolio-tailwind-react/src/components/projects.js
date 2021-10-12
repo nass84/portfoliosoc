@@ -104,7 +104,7 @@ function Projects() {
     <div className="project-container mt-10 ml-5 mr-5">
       <div className="project-nav-div">
         <PinkNav />
-        <h1 className="project-name text-primary text-6xl mt-10 mb-10 text-left font-bold">
+        <h1 className="project-name text-primary text-4xl md:text-6xl mt-10 mb-10 text-left font-bold">
           Projects
         </h1>
       </div>
