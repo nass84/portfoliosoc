@@ -95,7 +95,7 @@ function Projects() {
       bullet2:
         "Used Miro for the design process, Completed User Research, Figma for wireframing and prototypes. I worked on how the different components would link together, uploading photos and getting them to display on different pages",
       additional: "Coded in React with Firebase",
-      website: "shorturl.at/lGIX4",
+      website: "https://wonderers.netlify.app/landingpage",
       id: 8,
     },
     {
