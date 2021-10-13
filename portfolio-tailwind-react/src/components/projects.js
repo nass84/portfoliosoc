@@ -84,7 +84,7 @@ function Projects() {
         "Challenged to learn a new subject by ourselves and create a project. I built a website for my mystery club group to record our mystery memories",
       bullet2: "Learnt SASS",
       additional: "Coded in React using SASS",
-      website: "https://github.com/nass84/mystery-club",
+      website: "https://mysteryclub.netlify.app/",
       id: 7,
     },
     {
