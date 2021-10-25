@@ -5,6 +5,7 @@ import Projects from "./components/projects";
 import Reference from "./components/reference";
 import Employment from "./components/employment";
 import Landing from "./components/index"
+import CaseStudy from "./components/casestudy";
 
 function App() {
   return (
@@ -27,6 +28,9 @@ function App() {
             </Route>
             <Route path="/employment">
               <Employment />
+            </Route>
+            <Route path="/casestudy">
+              <CaseStudy/>
             </Route>
           </Switch>
         </Router>

@@ -32,9 +32,11 @@ function HomePage() {
                   }}
                 />
               </div>
+              <Link to="/casestudy">
               <button className="bg-primary hover:bg-white  text-white hover:text-primary p-10 font-bold text-xl lg:text-2xl rounded-xl border-2 border-white hover:border-primary hover:text-primary lg:w-2/4 align-center ml-10 mr-10">
                 UX Case Study: {<br></br>} Design a fitness app for people who want to make exercise more enjoyable
               </button>
+              </Link>
               {/* <div className="home-page-scratch hidden lg:block ">
                 <iframe
                   src="https://scratch.mit.edu/projects/498739371/embed"
