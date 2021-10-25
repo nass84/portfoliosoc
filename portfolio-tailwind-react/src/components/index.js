@@ -19,7 +19,7 @@ function HomePage() {
           </div>
 
           <div className="">
-            <div className="home-page-twitter-scratch-div flex flex-row ml-10 mr-10 justify-center">
+            <div className="home-page-twitter-scratch-div flex lg:flex-row flex-col ml-10 mr-10 justify-center">
               <div className="home-page-twitter transform lg:mr-10">
                 <Timeline
                   dataSource={{
@@ -32,8 +32,10 @@ function HomePage() {
                   }}
                 />
               </div>
-
-              <div className="home-page-scratch hidden lg:block ">
+              <button className="bg-primary hover:bg-white  text-white hover:text-primary p-10 font-bold text-xl lg:text-2xl rounded-xl border-2 border-white hover:border-primary hover:text-primary lg:w-2/4 align-center ml-10 mr-10">
+                UX Case Study: {<br></br>} Design a fitness app for people who want to make exercise more enjoyable
+              </button>
+              {/* <div className="home-page-scratch hidden lg:block ">
                 <iframe
                   src="https://scratch.mit.edu/projects/498739371/embed"
                   allowtransparency="true"
@@ -44,7 +46,7 @@ function HomePage() {
                   title="School of Code Game"
                   allowfullscreen
                 ></iframe>
-              </div>
+              </div> */}
             </div>
             <div class="flex justify-center">
             <div className="home-page-buttons-div flex justify-center mt-5 flex-col lg-justify-around lg:flex-row lg:mt-10 ">
