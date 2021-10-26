@@ -23,7 +23,7 @@ function HomePage() {
 
           <div className="test">
             <div className="justify-center">
-              <div className="home-page-twitter-scratch-div flex lg:flex-row lg:align-center flex-col justify-center">
+              <div className="home-page-twitter-scratch-div flex lg:flex-row lg:align-center flex-col justify-center ml-10 mr-10">
                 <div className="home-page-twitter transform lg:ml-48">
                   <Timeline
                     dataSource={{
@@ -38,7 +38,7 @@ function HomePage() {
                 </div>
                 <div className="">
                   <Link to="/casestudy">
-                    <button className="bg-primary text-left hover:bg-white  text-white hover:text-primary p-10 font-bold text-xl lg:text-2xl xl:lg:text-xl rounded-xl w-full h-full border-2 border-white hover:border-primary hover:text-primary lg:w-2/4">
+                    <button className="hover:bg-primary text-left bg-white  hover:text-white text-primary p-10 font-bold text-lg 2xl:text-xl rounded-xl w-full h-full border-2 hover:border-white border-primary lg:w-2/4 shadow-2xl">
                       UX Case Study: {<br></br>} {<br></br>} Design a fitness
                       app for people who want to make exercise more enjoyable
                     </button>

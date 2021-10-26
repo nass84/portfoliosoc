@@ -8,7 +8,7 @@ const CaseStudy = () => {
       <h1 className="casestudy text-left flex flex-row mt-5 mb-10 text-primary text-4xl md:text-6xl font-bold md:ml-10">
         UX - Case Study
       </h1>
-      <iframe className="lg:ml-10 lg:mr-10 xl:ml-20 xl:mr:20"
+      <iframe className="lg:ml-10 lg:mr-10 xl:ml-30 xl:mr:30"
         src="https://docs.google.com/presentation/d/e/2PACX-1vRfysutuxBvgX9f_UnhxplYwMK7Kt1onU-pwiW40zeP_vw-5Ke_DbZcolxRI-9lYKm7RHB4TYLZGimi/embed?start=false&loop=false&delayms=3000"
         frameborder="0"
         height="469"
