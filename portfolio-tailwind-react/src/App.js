@@ -4,15 +4,17 @@ import AboutPage from "./components/about";
 import Projects from "./components/projects";
 import Reference from "./components/reference";
 import Employment from "./components/employment";
-import Landing from "./components/index"
-import CaseStudy from "./components/casestudy";
+import Landing from "./components/index";
+import Flexercise from "./components/flexercise";
+import Casestudies from "./components/casestudies";
+import Wonderers from "./components/wonderers";
+import Rebel from "./components/rebel";
 
 function App() {
   return (
     <div className="App">
       <main>
-      
-       <Router>
+        <Router>
           <Route path="/" exact>
             <Landing />
           </Route>
@@ -29,8 +31,17 @@ function App() {
             <Route path="/employment">
               <Employment />
             </Route>
-            <Route path="/casestudy">
-              <CaseStudy/>
+            <Route path="/casestudies">
+              <Casestudies />
+            </Route>
+            <Route path="/flexercise">
+              <Flexercise />
+            </Route>
+            <Route path="/wonderers">
+              <Wonderers />
+            </Route>
+            <Route path="/rebel">
+              <Rebel />
             </Route>
           </Switch>
         </Router>

@@ -8,6 +8,7 @@ import flex from "../images/flexercise.png";
 import mystery from "../images/mystery.png";
 import wonder from "../images/wonder.png";
 import portfolio from "../images/portfolio.png";
+import meah from "../images/meah.png";
 import { Link } from "react-router-dom";
 
 function Projects() {
@@ -109,6 +110,17 @@ function Projects() {
       website: "https://boredinbrum.uk/",
       id: 9,
     },
+    {
+      image: meah,
+      title: "Personal Project - Meah Match",
+      bullet1:
+        "To celebrate the founder of School of Code, Chris Meahs Birthday, I made him a matching game to say thank you for the opportunity he gave me by giving me a place on the bootcamp",
+      bullet2: "Used Net Ninjas React Tutorial",
+      additional: "Coded in React",
+      website: "https://nass84.github.io/reactmemory/",
+      id: 10,
+    },
+
   ];
 
   return (
@@ -127,10 +139,10 @@ function Projects() {
           making projects aswell as working full time for Citizens Advice.
           <br></br>
           <br></br>
-          These are the projects I made during my time with School of Code.
+          These are the projects I have made during my time with School of Code and afterwards.
         </p>
       </div>
-      <div className="projects-examples mt-10">
+      <div className="projects-examples mt-5">
         {project.map((project) => (
           <div className="example-div  p-10 xl:pl-20 xl:pr:20 ml:10 mr:10 lg:flex lg:text-xl">
             <div className="example-image justify-center  lg:w-6/12">

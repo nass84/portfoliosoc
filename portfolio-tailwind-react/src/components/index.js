@@ -12,6 +12,7 @@ function HomePage() {
         <div>
           <div className="justify-start">
             <Navbar />
+            
           </div>
           <div className="home-page-name-div text-white flex-col justify-start md:ml-10 items-center mb-5">
             <h1 className="text-5xl md:text-5xl lg:text-7xl mt-5">
@@ -19,35 +20,29 @@ function HomePage() {
               Becki Floyd{" "}
             </h1>
             <h2 className="text-2xl lg:text-3xl lg:mb-10">UX Developer</h2>
+          
           </div>
 
           <div className="test">
             <div className="justify-center">
-              <div className="home-page-twitter-scratch-div flex lg:flex-row lg:align-center flex-col justify-center ml-10 mr-10">
-                <div className="home-page-twitter transform lg:ml-48">
+              <div className="home-page-twitter-scratch-div flex  justify-center">
+                <div className="home-page-twitter transform flex-1 ml-12 mr-12">
                   <Timeline
                     dataSource={{
                       sourceType: "profile",
                       screenName: "boredinbrum",
                     }}
                     options={{
-                      height: "402",
-                      width: "485",
+                      height: "380",
+                      width: "600",
                     }}
                   />
                 </div>
-                <div className="">
-                  <Link to="/casestudy">
-                    <button className="hover:bg-primary text-left bg-white  hover:text-white text-primary p-10 font-bold text-lg 2xl:text-xl rounded-xl w-full h-full border-2 hover:border-white border-primary lg:w-2/4 shadow-2xl">
-                      UX Case Study: {<br></br>} {<br></br>} Design a fitness
-                      app for people who want to make exercise more enjoyable
-                    </button>
-                  </Link>
-                </div>
+                
               </div>
             </div>
             <div class="flex justify-center">
-              <div className="home-page-buttons-div flex justify-center mt-5 flex-col lg-justify-around lg:flex-row lg:mt-10 ">
+            <div className="home-page-buttons-div flex justify-center mt-5 flex-col lg:flex-row lg:mt-10">
                 <Link to="/about">
                   <BigButton text="About Me" />
                 </Link>
@@ -55,7 +50,10 @@ function HomePage() {
                   <BigButton text="Employment" />
                 </Link>
                 <Link to="/projects">
-                  <BigButton text="Projects" />
+                  <BigButton text="Coding Projects" />
+                </Link>
+                <Link to="/casestudies">
+                  <BigButton text="UX Case Studies" />
                 </Link>
               </div>
             </div>
